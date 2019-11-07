@@ -1,16 +1,42 @@
 body{
     margin: 0;
+    font-family: 'Raleway', sans-serif;
   }
 
+  /*BAKGRUNDSANIMATIONEN*/
   #vantajs {
       height: 100vh;
       width: 100vw;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
   h1 {
       color: white;
+      font-size: 3rem;
   }
+
+  .fa-chevron-down {
+      color: white;
+      font-size: 2rem;
+  }
+
+  @keyframes jump {
+    0% { 
+        top: 0; } 
+    50% { 
+        top: 3rem; } 
+    100% { 
+        top: 0; }
+  }
+
+  .arrow-down {
+    animation: jump 5s infinite;
+}
+      
+  
 
   aside {
       background-color: antiquewhite;
