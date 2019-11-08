@@ -64,13 +64,13 @@ body{
   /*Animation för pilen som studsar*/
   @keyframes jump {
     0% { 
-        top: 0; 
+        top: -2rem; 
     } 
     50% { 
-        top: 3rem; 
+        top: 0rem; 
     } 
     100% { 
-        top: 0; 
+        top: -2rem; 
     }
   }
 
