@@ -18,23 +18,42 @@ body{
   .fa-bars {
       font-size: 2rem;
       margin: 1rem;
-  }
-
-  nav {
-      color: white;
+      position: fixed;
       top: 0;
       left: 0;
   }
 
+  nav {
+      color: white;
+      margin-top: 0;
+      
+  }
+
   ul {
     list-style-type: none;
-
+    position: fixed;
+    top: 3em;
+    left: 0;
+    padding: 0;
+    margin: 1rem;
   }
+
+  li {
+      padding: 0.3rem;
+  }
+
+.rubrikerFramsida {
+    text-align: center;
+}
 
   h1 {
       margin: 0;
-      color: white;
       font-size: 6vw;
+  }
+
+  h2 {
+      margin: 0;
+      font-size: 2vw;
   }
 
   .fa-chevron-down {

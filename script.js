@@ -8,15 +8,15 @@ VANTA.BIRDS({
     separation: 60.00,
     cohesion: 30.00
   })
-  
 
-  $( "nav" ).hide();
+
+  $("ul").hide();
 
   $('.fa-bars').click(function(){
-      $('nav').toggle('slow')
+      $('ul').toggle('slow')
   })
 
-});
+})
 
  
   
