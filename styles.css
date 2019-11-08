@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
+   color: white;
   }
 
   /*BAKGRUNDSANIMATIONEN*/
@@ -8,14 +9,32 @@ body{
       height: 100vh;
       width: 100vw;
       display: flex;
+      flex-grow: 1;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
   }
 
-  h1 {
+  .fa-bars {
+      font-size: 2rem;
+      margin: 1rem;
+  }
+
+  nav {
       color: white;
-      font-size: 3rem;
+      top: 0;
+      left: 0;
+  }
+
+  ul {
+    list-style-type: none;
+
+  }
+
+  h1 {
+      margin: 0;
+      color: white;
+      font-size: 6vw;
   }
 
   .fa-chevron-down {
@@ -23,21 +42,61 @@ body{
       font-size: 2rem;
   }
 
+  /*Animation för pilen som studsar*/
   @keyframes jump {
     0% { 
-        top: 0; } 
+        top: 0; 
+    } 
     50% { 
-        top: 3rem; } 
+        top: 3rem; 
+    } 
     100% { 
-        top: 0; }
+        top: 0; 
+    }
   }
 
   .arrow-down {
     animation: jump 5s infinite;
 }
-      
-  
 
-  aside {
-      background-color: antiquewhite;
-  }
+/*Animation för "tåget"*/
+@keyframes slide {
+    0% { 
+        left: -50%; 
+    } 
+    50% { 
+        left: 100%; 
+    } 
+    100% { 
+        left: -50px; 
+    }
+}
+
+.move {
+     background-color: thistle;
+     width: 100vw;
+     overflow: hidden;
+}
+
+.fa-shuttle-van {
+    font-size: 2rem;
+    position: relative;
+    color: white;
+    animation: slide 15s ease-in-out infinite;
+
+}
+     
+/*Allt nedanför tåget*/
+main {
+    height: 100vh;
+    width: 100vw;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: thistle;
+
+} 
+
+
+ 
