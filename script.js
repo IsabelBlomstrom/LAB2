@@ -10,10 +10,10 @@ $(document).ready(function() {
     })
 
 
-    $("ul").hide();
+    $(".hiddenUl").hide();
 
     $('.fa-bars').click(function() {
-        $('ul').toggle('slow')
+        $('.hiddenUl').toggle('slow')
     })
 
 })

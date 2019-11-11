@@ -31,7 +31,7 @@ nav {
     left: 0;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     position: fixed;
     top: 3em;
@@ -120,14 +120,31 @@ h2 {
 main {
     display: flex;
     flex: 1 100%;
-    background-color: black;
+    background-color: rgb(6, 27, 48);
 }
 
 main div {
-    background-color: rgb(6, 27, 48);
     width: 100%;
-    padding: 1rem;
+    height: 100%;
+    margin: 2rem;
     text-align: center;
+}
+
+.meriter li {
+    list-style-type: disc;
+    padding: 1rem;
+
+}
+
+img {
+    width: 50%;
+    height: 70%;
+    padding: 2rem;
+}
+
+img:hover {
+    transform: rotate(45deg);
+
 }
 
 footer {
@@ -137,6 +154,10 @@ footer {
     flex: 1 100%;
     justify-content: space-around;
     background-color: darkgrey;
+}
+
+footer p {
+    margin: 0.5rem;
 }
 
 a {
