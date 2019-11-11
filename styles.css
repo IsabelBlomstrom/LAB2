@@ -1,121 +1,143 @@
-body{
+body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-   color: white;
-  }
+    color: white;
+}
 
-  /*BAKGRUNDSANIMATIONEN*/
-  #vantajs {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      flex-grow: 1;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-  }
 
-  .fa-bars {
-      font-size: 2rem;
-      margin: 1rem;
-      position: fixed;
-      top: 0;
-      left: 0;
-  }
+/*BAKGRUNDSANIMATIONEN*/
 
-  nav {
-      color: white;
-      margin-top: 0;
-      
-  }
+#vantajs {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
-  ul {
+
+/*HAMBURGERMENY*/
+
+nav {
+    margin-top: 0;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    margin: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+ul {
     list-style-type: none;
     position: fixed;
     top: 3em;
     left: 0;
     padding: 0;
     margin: 1rem;
-  }
+}
 
-  li {
-      padding: 0.3rem;
-  }
+li {
+    padding: 0.3rem;
+}
+
+
+/*RUBRIKERNA*/
 
 .rubrikerFramsida {
     text-align: center;
 }
 
-  h1 {
-      margin: 0;
-      font-size: 6vw;
-  }
+h1 {
+    margin: 0;
+    font-size: 6vw;
+}
 
-  h2 {
-      margin: 0;
-      font-size: 2vw;
-  }
+h2 {
+    margin: 0;
+    font-size: 2vw;
+}
 
-  .fa-chevron-down {
-      color: white;
-      font-size: 2rem;
-  }
 
-  /*Animation för pilen som studsar*/
-  @keyframes jump {
-    0% { 
-        top: -2rem; 
-    } 
-    50% { 
-        top: 0rem; 
-    } 
-    100% { 
-        top: -2rem; 
+/*PILEN*/
+
+.fa-chevron-down {
+    font-size: 2rem;
+}
+
+
+/*Animation för pilen som studsar*/
+
+@keyframes jump {
+    0% {
+        top: -2rem;
     }
-  }
+    50% {
+        top: 0rem;
+    }
+    100% {
+        top: -2rem;
+    }
+}
 
-  .arrow-down {
+.arrow-down {
     animation: jump 5s infinite;
 }
 
+
 /*Animation för "tåget"*/
+
 @keyframes slide {
-    0% { 
-        left: -50%; 
-    } 
-    50% { 
-        left: 100%; 
-    } 
-    100% { 
-        left: -50px; 
+    0% {
+        left: -50%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -50px;
     }
 }
 
 .move {
-     background-color: thistle;
-     width: 100vw;
-     overflow: hidden;
+    background-color: rgb(6, 27, 48);
+    width: 100vw;
+    overflow: hidden;
 }
 
 .fa-shuttle-van {
     font-size: 2rem;
     position: relative;
-    color: white;
     animation: slide 15s ease-in-out infinite;
-
 }
-     
+
+
 /*Allt nedanför tåget*/
+
 main {
     height: 100vh;
     width: 100vw;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    background-color: thistle;
+    display: flex;
+    flex-grow: 1;
+    background-color: black;
+}
 
-} 
+main div {
+    background-color: rgb(6, 27, 48);
+    width: 50vw;
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
 
-
- 
+footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
