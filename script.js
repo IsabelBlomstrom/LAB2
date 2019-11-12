@@ -16,4 +16,17 @@ $(document).ready(function() {
         $('.hiddenUl').toggle('slow')
     })
 
+  /*  const hideMenubar = document.querySelector('ul')
+hideMenubar.addEventListener('mouseleave', menubarMouseleave)
+
+function menubarMouseleave(event) {
+    $(".hiddenUl").hide(); 
+}*/
+
+$('.hiddenUl').mouseleave(function() {
+    $(".hiddenUl").hide();
+});
+
+
 })
+

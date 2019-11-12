@@ -137,15 +137,13 @@ main div {
 }
 
 img {
-    width: 50%;
-    height: 70%;
+    width: 35%;
     padding: 2rem;
 }
 
-img:hover {
+ img:hover {
     transform: rotate(45deg);
-
-}
+} 
 
 footer {
     height: 20%;
@@ -168,4 +166,4 @@ a {
 a:visited {
     text-decoration: none;
     color: wheat;
-}
+} 
