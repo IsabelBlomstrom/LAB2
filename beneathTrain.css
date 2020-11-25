@@ -3,7 +3,7 @@
 main {
     display: flex;
     flex: 1 100%;
-    background-color: rgb(6, 27, 48);
+    background-color: #efbbcf;
 }
 
 main div {
@@ -31,12 +31,12 @@ img {
 
 /*FOOTER*/
 footer {
-    height: 20%;
+    padding: 2rem;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 100%;
     justify-content: space-around;
-    background-color: darkgrey;
+    background-color: #c3aed6;
 }
 
 footer p {
