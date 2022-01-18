@@ -43,6 +43,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 
 nav ul {
@@ -85,21 +86,30 @@ h2 {
 
 /*ANIMATION FOR JUMPING ARROW*/
 
-@keyframes jump {
-    0% {
-        top: -2rem;
-    }
-    50% {
-        top: 0rem;
-    }
-    100% {
-        top: -2rem;
-    }
-}
-
-.arrow-down {
-    animation: jump 5s infinite;
-}
+@keyframes arrow-jump {
+0%, 20%, 50%, 80%, 100% {
+    transform: (translateY(0));
+    -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+  }
+	40% {
+    transform: (translateY(-30px));
+    -webkit-transform: translateY(-30px);
+          -moz-transform: translateY(-30px);
+  }
+	60% {
+    transform: (translateY(-15px));
+    -webkit-transform: translateY(-15px);
+          -moz-transform: translateY(-15px);
+  }
+  }
+  
+  .arrow-down {
+    -webkit-animation: arrow-jump 1s infinite; 
+    -moz-animation:    arrow-jump 1s infinite; 
+    -o-animation:      arrow-jump 1s infinite; 
+    animation:         arrow-jump 1s infinite; 
+  }
 
 
 /*ANIMATION FOR TRAIN*/

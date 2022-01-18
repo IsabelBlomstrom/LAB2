@@ -1,9 +1,11 @@
 /*TEXT DIVS BENEATH TRAIN*/
-
 main {
+    background-color: #efbbcf;
+}
+
+main, .wrapper {
     display: flex;
     flex: 1 100%;
-    background-color: #efbbcf;
 }
 
 main div {
@@ -16,10 +18,21 @@ main div {
 .meriter li {
     list-style-type: disc;
     padding: 1rem;
-
 }
 
-/*PICTURE OF MOI*/
+.wrapper {
+    background-color: #d2a3d8;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+/*PICTURE OF ME*/
 img {
     width: 35%;
     padding: 2rem;
@@ -28,6 +41,17 @@ img {
  img:hover {
     transform: rotate(45deg);
 } 
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+    margin: 2rem;
+    text-align: center;
+}
+
+.portfolio-links {
+    padding: 2rem;
+}
 
 /*FOOTER*/
 footer {
