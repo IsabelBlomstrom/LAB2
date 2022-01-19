@@ -4,6 +4,10 @@ body {
     color: white;
 }
 
+p, li {
+    font-size: 1.3vw;
+}
+
 
 /*BACKGROUND ANIMATION*/
 
