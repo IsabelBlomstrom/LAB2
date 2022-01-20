@@ -9,6 +9,12 @@
     main {
         flex-wrap: wrap;
     }
+    p, li {
+        font-size: unset;
+    }
+    footer {
+        justify-content: unset;
+    }
 }
 /*MEDIA QUERY for tablets*/
 @media screen and (max-width: 900px) {
