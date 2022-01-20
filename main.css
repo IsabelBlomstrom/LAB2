@@ -41,7 +41,7 @@ main div {
 /*PICTURE OF ME*/
 img {
     width: 35%;
-    padding: 2rem;
+    margin: 2rem;
 }
 
  img:hover {
@@ -57,12 +57,25 @@ img {
 .portfolio-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    column-gap: 7rem;
+    row-gap: 7rem;
     padding: 2rem 0;
+}
+
+.portfolio-links div {
+    background-color: #0B1431;
 }
 
 .portfolio-links img {
     transform: none;
-    width: 50%;
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.portfolio-links img:hover {
+    opacity: 0.15;
 }
 
 /*FOOTER*/

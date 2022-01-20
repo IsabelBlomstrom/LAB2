@@ -12,6 +12,9 @@
     p, li {
         font-size: unset;
     }
+    .portfolio-links {
+        grid-template-columns: 1fr ;
+    }
     footer {
         justify-content: unset;
     }
