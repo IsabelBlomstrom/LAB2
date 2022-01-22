@@ -6,11 +6,11 @@
     h2 {
         font-size: 5vw;
     }
-    main {
+    main, .wrapper {
         flex-wrap: wrap;
     }
     p, li {
-        font-size: unset;
+        font-size: 3vw;
     }
     .portfolio-links {
         grid-template-columns: 1fr ;
@@ -27,7 +27,7 @@
     h2 {
         font-size: 3vw;
     }
-    img {
+    .isabel {
         width: 65%;
     }
     

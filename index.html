@@ -56,7 +56,7 @@
 
     <main>
         <div><a name="omMig">
-                <h2>Lokföraren som bytte bana</h2>
+                <h2 class="ul-heading">Lokföraren som bytte bana</h2>
             </a>
             <p>
                Detta är ett CV som jag har kodat till en av de första skoluppgifterna på utbildningen front end developer, på 
@@ -78,7 +78,7 @@
         </div>
 
         <div>
-            <h2><a name="jobb">Jobb/studier</a></h2>
+            <h2><a name="jobb" class="ul-heading">Jobb/studier</a></h2>
             <ul class="meriter">
                 <li>2021 feb - maj, praktik på Business & emotions AB</li>
                 <li>2020 sept - nov, praktik på MEV AB</li>
@@ -94,9 +94,11 @@
     </main>
 
     <div class="wrapper" style="flex-direction: unset;">
+        
         <div class="competence">
-            <h2><a name="kompetenser">Kompetenser</a></h2>
             <ul class="meriter">
+                <h2><a name="kompetenser" class="ul-heading">Kompetenser</a></h2>
+
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -105,14 +107,25 @@
                 <li>Adobe XD</li>
                 <li>Git</li>
              </ul>        
+
+             <!-- <ul class="meriter">
+                <h2><a name="kompetenser" class="ul-heading">Kompetenser</a></h2>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>WordPress</li>
+                <li>Adobe XD</li>
+                <li>Git</li>
+             </ul>     -->
         </div>
        
-        <img src="./isabel-portratt2.jpg" alt="Bild på Isabel">
+        <img class="isabel" src="./isabel-portratt2.jpg" alt="Bild på Isabel">
 
     </div>
 
 
-    <div class="wrapper">
+    <div class="wrapper" style="margin: 0;">
         <div class="portfolio">
             <a name="portfolio">
                 <h2>Projekt</h2>
@@ -120,23 +133,51 @@
             <p>Nedan kommer några hemsidor jag byggt och jobbat med under mina praktiker.</p>
 
             <div class="portfolio-links">
-                <div>
-                <a href="https://gottskargrundskola.se/" target="_blank">
+
+                <div class="img-div">
                     <img src="gottskar-thumb.jpg" alt="">
-                </a></div>
-                <div><a href="https://www.businessandemotions.se/" target="_blank">
+                    <a href="https://gottskargrundskola.se/" target="_blank">
+                        <p>Det största projektet som jag arbetade med under min andra praktik. Sidan är till största delen 
+                            utvecklad självständigt av mig. En stor del av designen fanns redan tillgänglig som prototyper, 
+                            men vissa undersidor samt mobilversioner arbetade jag fram. 
+                            Sidan är gjord i WordPress med Divi som page builder.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="img-div">
                     <img src="business-thumb.jpg" alt="">
-                </a></div>
-                <div><a href="https://www.businessandemotions.se/en/" target="_blank">
-                    <img src="business-eng.jpg" alt="">
-                </a></div>
-                <div><a href="https://kjernenkiropraktikk.no/" target="_blank">
-                    <img src="kjernen-thumb.jpg" alt="">
-                </a></div>
+                    <a href="https://www.businessandemotions.se/" target="_blank">
+                        <p>Det sista stora projektet jag gjorde under min andra praktik. Jag jobbade självständigt med sidan och 
+                            kodade den i HTML, CSS och JavaScript. Designen fanns redan som prototyper. Hela projektet tog drygt tre veckor. 
+                        </p>
+                    </a>
+                </div>
+
+                    <div class="img-div">
+                        <img src="business-eng.jpg" alt="">
+                        <a href="https://www.businessandemotions.se/en/" target="_blank">
+                            <p>En enkel sida gjord med HTML och CSS. Här fanns redan en existerande 
+                                sida som hade varit utan underhåll en längre tid. Mitt uppdrag var att göra om sidan och 
+                                åtgärda det som var trasigt, samt uppdatera saker som bild och typsnitt. Här fick jag öva mycket på 
+                                att sätta mig in i någon annans kod. 
+                            </p>
+                    </a>
+                    </div>
+
+                    <div class="img-div">
+                        <img src="kjernen-thumb.jpg" alt="">
+                        <a href="https://kjernenkiropraktikk.no/" target="_blank">
+                            <p>Det första projektet jag gjorde under min första praktik. Här fick jag 
+                                skapa hela produkten själv, från de första prototyperna i Adobe XD till 
+                                färdig kodad produkt, givetvis med hjälp och stöd från de andra i teamet. 
+                                Sidan är gjord med HTML, CSS och JavaScript. 
+                            </p>
+                    </a>
+                    </div>
             </div>
 
         </div>
-        <div class="color-gradient"></div>
 
     </div>
 
